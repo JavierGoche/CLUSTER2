@@ -6,13 +6,12 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_OuPa4LUoEeeg-K7kxgiQPA">
     <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_uv-SALUoEeeg-K7kxgiQPA" name="Percibir la velocidad actual" useCase="_XLdCULUpEeeg-K7kxgiQPA _c7OBgLUpEeeg-K7kxgiQPA _NLLawLUqEeeg-K7kxgiQPA _fDijcLUqEeeg-K7kxgiQPA _ic_LgLUqEeeg-K7kxgiQPA"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_W7gXQLUoEeeg-K7kxgiQPA" name="Conductor"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_c7OBgLUpEeeg-K7kxgiQPA" name="Velocimetro Fisico" subject="_uv-SALUoEeeg-K7kxgiQPA"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_NLLawLUqEeeg-K7kxgiQPA" name="Formula" subject="_uv-SALUoEeeg-K7kxgiQPA"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_fDijcLUqEeeg-K7kxgiQPA" name="recibir dato" subject="_uv-SALUoEeeg-K7kxgiQPA"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_ic_LgLUqEeeg-K7kxgiQPA" name="proceso" subject="_uv-SALUoEeeg-K7kxgiQPA"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_XLdCULUpEeeg-K7kxgiQPA" name="Status de Ignicion activa" subject="_uv-SALUoEeeg-K7kxgiQPA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_c7OBgLUpEeeg-K7kxgiQPA" name="Velocimetro Fisico"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NLLawLUqEeeg-K7kxgiQPA" name="Formula"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fDijcLUqEeeg-K7kxgiQPA" name="recibir dato"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ic_LgLUqEeeg-K7kxgiQPA" name="proceso"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XLdCULUpEeeg-K7kxgiQPA" name="Status de Ignicion activa"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_RKtn4LUpEeeg-K7kxgiQPA" name="Modulo de comunicacion"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_KOUBALUqEeeg-K7kxgiQPA" client="_RKtn4LUpEeeg-K7kxgiQPA" supplier="_XLdCULUpEeeg-K7kxgiQPA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_LTwmILUqEeeg-K7kxgiQPA" client="_W7gXQLUoEeeg-K7kxgiQPA" supplier="_c7OBgLUpEeeg-K7kxgiQPA"/>
@@ -20,7 +19,23 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_q_WOILUqEeeg-K7kxgiQPA" client="_NLLawLUqEeeg-K7kxgiQPA" supplier="_ic_LgLUqEeeg-K7kxgiQPA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_KK39ILqpEeeS3qgwzAnMCA" client="_RKtn4LUpEeeg-K7kxgiQPA" supplier="_fDijcLUqEeeg-K7kxgiQPA"/>
   <packagedElement xmi:type="uml:Abstraction" xmi:id="_K8MFULqpEeeS3qgwzAnMCA" client="_fDijcLUqEeeg-K7kxgiQPA" supplier="_NLLawLUqEeeg-K7kxgiQPA"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_O6fG4LqpEeeS3qgwzAnMCA" client="_W7gXQLUoEeeg-K7kxgiQPA" supplier="_uv-SALUoEeeg-K7kxgiQPA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9u-r0L3XEeepfsfxbh3Sgw" name="conductor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FFj30L3YEeepfsfxbh3Sgw" general="_A5e48L3YEeepfsfxbh3Sgw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-um80L3XEeepfsfxbh3Sgw" name="modulo de comunicaccion">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Ett_kL3YEeepfsfxbh3Sgw" general="_A5e48L3YEeepfsfxbh3Sgw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_A5e48L3YEeepfsfxbh3Sgw" name="percibir la velocidad actual"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_KQ9lsL3YEeepfsfxbh3Sgw" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_LraKcL3YEeepfsfxbh3Sgw" name="Lifeline"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5lElQL3ZEeepfsfxbh3Sgw" name="velocimetro"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bu6_cL3aEeepfsfxbh3Sgw" name="dato para muestrear"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eMueoL3aEeepfsfxbh3Sgw" name="status de ignicion"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eD0LgL3gEeepfsfxbh3Sgw" name="formula"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jW-HML3gEeepfsfxbh3Sgw" name="comunicacion">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qBvWEL3gEeepfsfxbh3Sgw" general="_eD0LgL3gEeepfsfxbh3Sgw"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Oq0TcLUoEeeg-K7kxgiQPA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oq-EcLUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
