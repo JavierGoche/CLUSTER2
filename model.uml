@@ -114,6 +114,77 @@
       <message xmi:type="uml:Message" xmi:id="_ZvUrsMNrEeehwesuyvolFw" name="enviarDato()" messageSort="asynchCall" receiveEvent="_Zvd1ocNrEeehwesuyvolFw" sendEvent="_Zvd1oMNrEeehwesuyvolFw"/>
       <message xmi:type="uml:Message" xmi:id="_igYRoMNrEeehwesuyvolFw" name="MoverGrados()" messageSort="asynchCall" receiveEvent="_igYRosNrEeehwesuyvolFw" sendEvent="_igYRocNrEeehwesuyvolFw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_NLJMcMjcEeejPrk7VVOpDA" name="Activity1" node="_TwoSsMjcEeejPrk7VVOpDA _Zb7ooMjcEeejPrk7VVOpDA _dxJ8cMjcEeejPrk7VVOpDA _-Aqw4MjcEeejPrk7VVOpDA _Bgr7AMjdEeejPrk7VVOpDA _KSgV8MjdEeejPrk7VVOpDA _OvVGkMjdEeejPrk7VVOpDA _RssPkMjdEeejPrk7VVOpDA _XmwaQMjdEeejPrk7VVOpDA _mpq_0MjdEeejPrk7VVOpDA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_bOpuAMjdEeejPrk7VVOpDA" target="_Zb7ooMjcEeejPrk7VVOpDA" source="_TwoSsMjcEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_cAuEIMjdEeejPrk7VVOpDA" target="_dxJ8cMjcEeejPrk7VVOpDA" source="_Zb7ooMjcEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jP3ycMjdEeejPrk7VVOpDA" target="_XmwaQMjdEeejPrk7VVOpDA" source="_dxJ8cMjcEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_khZEsMjdEeejPrk7VVOpDA" target="_-Aqw4MjcEeejPrk7VVOpDA" source="_XmwaQMjdEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_lOcX8MjdEeejPrk7VVOpDA" target="_Bgr7AMjdEeejPrk7VVOpDA" source="_XmwaQMjdEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ovOXEMjdEeejPrk7VVOpDA" target="_mpq_0MjdEeejPrk7VVOpDA" source="_-Aqw4MjcEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_t3t64MjdEeejPrk7VVOpDA" target="_mpq_0MjdEeejPrk7VVOpDA" source="_Bgr7AMjdEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ulUnwMjdEeejPrk7VVOpDA" target="_KSgV8MjdEeejPrk7VVOpDA" source="_mpq_0MjdEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_v0ctUMjdEeejPrk7VVOpDA" target="_OvVGkMjdEeejPrk7VVOpDA" source="_KSgV8MjdEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wSQDoMjdEeejPrk7VVOpDA" target="_RssPkMjdEeejPrk7VVOpDA" source="_OvVGkMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_TwoSsMjcEeejPrk7VVOpDA" name="StatusIgnition" outgoing="_bOpuAMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Zb7ooMjcEeejPrk7VVOpDA" name="SeñalDeEntrada" incoming="_bOpuAMjdEeejPrk7VVOpDA" outgoing="_cAuEIMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_dxJ8cMjcEeejPrk7VVOpDA" name="ModuloDeComunicacion" incoming="_cAuEIMjdEeejPrk7VVOpDA" outgoing="_jP3ycMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_-Aqw4MjcEeejPrk7VVOpDA" name="AplicarFormula" incoming="_khZEsMjdEeejPrk7VVOpDA" outgoing="_ovOXEMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Bgr7AMjdEeejPrk7VVOpDA" name="identificadorDeIDdeComandos" incoming="_lOcX8MjdEeejPrk7VVOpDA" outgoing="_t3t64MjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_KSgV8MjdEeejPrk7VVOpDA" name="NuevoValor" incoming="_ulUnwMjdEeejPrk7VVOpDA" outgoing="_v0ctUMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_OvVGkMjdEeejPrk7VVOpDA" name="DesplegarVelocidad" incoming="_v0ctUMjdEeejPrk7VVOpDA" outgoing="_wSQDoMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:FlowFinalNode" xmi:id="_RssPkMjdEeejPrk7VVOpDA" name="SERVOMOTOR" incoming="_wSQDoMjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_XmwaQMjdEeejPrk7VVOpDA" name="ModuloDeVelocidad" incoming="_jP3ycMjdEeejPrk7VVOpDA" outgoing="_khZEsMjdEeejPrk7VVOpDA _lOcX8MjdEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_mpq_0MjdEeejPrk7VVOpDA" name="ActualizacionDeDatos" incoming="_ovOXEMjdEeejPrk7VVOpDA _t3t64MjdEeejPrk7VVOpDA" outgoing="_ulUnwMjdEeejPrk7VVOpDA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_QIe-8MjqEeejPrk7VVOpDA" name="Act[Activity]VELOCIMETRO" node="_hvDNAMjqEeejPrk7VVOpDA _pjtcIMjqEeejPrk7VVOpDA _5n21MMjqEeejPrk7VVOpDA _Esr0kMjrEeejPrk7VVOpDA _iEtegMjrEeejPrk7VVOpDA _PIyxoMjsEeejPrk7VVOpDA _SM9GMMjsEeejPrk7VVOpDA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Hie9AMjrEeejPrk7VVOpDA" target="_mhExkMjqEeejPrk7VVOpDA" source="_5n21MMjqEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_IXOzsMjrEeejPrk7VVOpDA" target="_ni73MMjqEeejPrk7VVOpDA" source="_Esr0kMjrEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_w_UcoMjrEeejPrk7VVOpDA" target="_zSiR4MjqEeejPrk7VVOpDA" source="_hvDNAMjqEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_B-7_cMjsEeejPrk7VVOpDA" name=": PWM" target="_km6VgMjrEeejPrk7VVOpDA" source="_zDMY4MjrEeejPrk7VVOpDA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_B_FJYMjsEeejPrk7VVOpDA" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_B_FJYcjsEeejPrk7VVOpDA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z8EuAMjsEeejPrk7VVOpDA" target="_XjHSkMjsEeejPrk7VVOpDA" source="_YZ-CEMjsEeejPrk7VVOpDA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_bzuzMMjsEeejPrk7VVOpDA" target="_SM9GMMjsEeejPrk7VVOpDA" source="_PIyxoMjsEeejPrk7VVOpDA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hvDNAMjqEeejPrk7VVOpDA" name="AplicarFormula" outgoing="_w_UcoMjrEeejPrk7VVOpDA">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_mhExkMjqEeejPrk7VVOpDA" name="" incoming="_Hie9AMjrEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_mhOikMjqEeejPrk7VVOpDA" value="1"/>
+        </inputValue>
+        <inputValue xmi:type="uml:InputPin" xmi:id="_ni73MMjqEeejPrk7VVOpDA" incoming="_IXOzsMjrEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_ni73McjqEeejPrk7VVOpDA" value="1"/>
+        </inputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_pjtcIMjqEeejPrk7VVOpDA" name="ModificarDutyCicle">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_zSiR4MjqEeejPrk7VVOpDA" incoming="_w_UcoMjrEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_zSiR4cjqEeejPrk7VVOpDA" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_zDMY4MjrEeejPrk7VVOpDA" outgoing="_B-7_cMjsEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_zDMY4cjrEeejPrk7VVOpDA" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_5n21MMjqEeejPrk7VVOpDA" name="Vel Low" outgoing="_Hie9AMjrEeejPrk7VVOpDA">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_5oAmMMjqEeejPrk7VVOpDA" value="1"/>
+      </node>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_Esr0kMjrEeejPrk7VVOpDA" name="Vel High" outgoing="_IXOzsMjrEeejPrk7VVOpDA">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Esr0kcjrEeejPrk7VVOpDA" value="1"/>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_iEtegMjrEeejPrk7VVOpDA" name="AnchoDePulso">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_km6VgMjrEeejPrk7VVOpDA" incoming="_B-7_cMjsEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_km6VgcjrEeejPrk7VVOpDA" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_YZ-CEMjsEeejPrk7VVOpDA" name="" outgoing="_Z8EuAMjsEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_YZ-CEcjsEeejPrk7VVOpDA" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_PIyxoMjsEeejPrk7VVOpDA" name="DesplegarVelocidad" outgoing="_bzuzMMjsEeejPrk7VVOpDA">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_XjHSkMjsEeejPrk7VVOpDA" incoming="_Z8EuAMjsEeejPrk7VVOpDA">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_XjHSkcjsEeejPrk7VVOpDA" value="1"/>
+        </inputValue>
+      </node>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_SM9GMMjsEeejPrk7VVOpDA" name="RotacionDeMotor :Grados" incoming="_bzuzMMjsEeejPrk7VVOpDA">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_SM9GMcjsEeejPrk7VVOpDA" value="1"/>
+      </node>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Oq0TcLUoEeeg-K7kxgiQPA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oq-EcLUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
