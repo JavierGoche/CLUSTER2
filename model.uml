@@ -136,9 +136,8 @@
       <node xmi:type="uml:JoinNode" xmi:id="_XmwaQMjdEeejPrk7VVOpDA" name="ModuloDeVelocidad" incoming="_jP3ycMjdEeejPrk7VVOpDA" outgoing="_khZEsMjdEeejPrk7VVOpDA _lOcX8MjdEeejPrk7VVOpDA"/>
       <node xmi:type="uml:JoinNode" xmi:id="_mpq_0MjdEeejPrk7VVOpDA" name="ActualizacionDeDatos" incoming="_ovOXEMjdEeejPrk7VVOpDA _t3t64MjdEeejPrk7VVOpDA" outgoing="_ulUnwMjdEeejPrk7VVOpDA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_QIe-8MjqEeejPrk7VVOpDA" name="Act[Activity]VELOCIMETRO" node="_hvDNAMjqEeejPrk7VVOpDA _pjtcIMjqEeejPrk7VVOpDA _5n21MMjqEeejPrk7VVOpDA _Esr0kMjrEeejPrk7VVOpDA _iEtegMjrEeejPrk7VVOpDA _PIyxoMjsEeejPrk7VVOpDA _SM9GMMjsEeejPrk7VVOpDA">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_QIe-8MjqEeejPrk7VVOpDA" name="Act[Activity]temperatura" node="_hvDNAMjqEeejPrk7VVOpDA _pjtcIMjqEeejPrk7VVOpDA _5n21MMjqEeejPrk7VVOpDA _iEtegMjrEeejPrk7VVOpDA _PIyxoMjsEeejPrk7VVOpDA _SM9GMMjsEeejPrk7VVOpDA">
       <edge xmi:type="uml:ControlFlow" xmi:id="_Hie9AMjrEeejPrk7VVOpDA" target="_mhExkMjqEeejPrk7VVOpDA" source="_5n21MMjqEeejPrk7VVOpDA"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_IXOzsMjrEeejPrk7VVOpDA" target="_ni73MMjqEeejPrk7VVOpDA" source="_Esr0kMjrEeejPrk7VVOpDA"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_w_UcoMjrEeejPrk7VVOpDA" target="_zSiR4MjqEeejPrk7VVOpDA" source="_hvDNAMjqEeejPrk7VVOpDA"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_B-7_cMjsEeejPrk7VVOpDA" name=": PWM" target="_km6VgMjrEeejPrk7VVOpDA" source="_zDMY4MjrEeejPrk7VVOpDA">
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_B_FJYMjsEeejPrk7VVOpDA" value="true"/>
@@ -146,12 +145,9 @@
       </edge>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Z8EuAMjsEeejPrk7VVOpDA" target="_XjHSkMjsEeejPrk7VVOpDA" source="_YZ-CEMjsEeejPrk7VVOpDA"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_bzuzMMjsEeejPrk7VVOpDA" target="_SM9GMMjsEeejPrk7VVOpDA" source="_PIyxoMjsEeejPrk7VVOpDA"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_hvDNAMjqEeejPrk7VVOpDA" name="AplicarFormula" outgoing="_w_UcoMjrEeejPrk7VVOpDA">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hvDNAMjqEeejPrk7VVOpDA" name="probar abuja" outgoing="_w_UcoMjrEeejPrk7VVOpDA">
         <inputValue xmi:type="uml:InputPin" xmi:id="_mhExkMjqEeejPrk7VVOpDA" name="" incoming="_Hie9AMjrEeejPrk7VVOpDA">
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_mhOikMjqEeejPrk7VVOpDA" value="1"/>
-        </inputValue>
-        <inputValue xmi:type="uml:InputPin" xmi:id="_ni73MMjqEeejPrk7VVOpDA" incoming="_IXOzsMjrEeejPrk7VVOpDA">
-          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_ni73McjqEeejPrk7VVOpDA" value="1"/>
         </inputValue>
       </node>
       <node xmi:type="uml:OpaqueAction" xmi:id="_pjtcIMjqEeejPrk7VVOpDA" name="ModificarDutyCicle">
@@ -162,11 +158,8 @@
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_zDMY4cjrEeejPrk7VVOpDA" value="1"/>
         </outputValue>
       </node>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_5n21MMjqEeejPrk7VVOpDA" name="Vel Low" outgoing="_Hie9AMjrEeejPrk7VVOpDA">
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_5n21MMjqEeejPrk7VVOpDA" name="estado encendido" outgoing="_Hie9AMjrEeejPrk7VVOpDA">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_5oAmMMjqEeejPrk7VVOpDA" value="1"/>
-      </node>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_Esr0kMjrEeejPrk7VVOpDA" name="Vel High" outgoing="_IXOzsMjrEeejPrk7VVOpDA">
-        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Esr0kcjrEeejPrk7VVOpDA" value="1"/>
       </node>
       <node xmi:type="uml:OpaqueAction" xmi:id="_iEtegMjrEeejPrk7VVOpDA" name="AnchoDePulso">
         <inputValue xmi:type="uml:InputPin" xmi:id="_km6VgMjrEeejPrk7VVOpDA" incoming="_B-7_cMjsEeejPrk7VVOpDA">
@@ -176,12 +169,12 @@
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_YZ-CEcjsEeejPrk7VVOpDA" value="1"/>
         </outputValue>
       </node>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_PIyxoMjsEeejPrk7VVOpDA" name="DesplegarVelocidad" outgoing="_bzuzMMjsEeejPrk7VVOpDA">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_PIyxoMjsEeejPrk7VVOpDA" name="Desplegar temperatura" outgoing="_bzuzMMjsEeejPrk7VVOpDA">
         <inputValue xmi:type="uml:InputPin" xmi:id="_XjHSkMjsEeejPrk7VVOpDA" incoming="_Z8EuAMjsEeejPrk7VVOpDA">
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_XjHSkcjsEeejPrk7VVOpDA" value="1"/>
         </inputValue>
       </node>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_SM9GMMjsEeejPrk7VVOpDA" name="RotacionDeMotor :Grados" incoming="_bzuzMMjsEeejPrk7VVOpDA">
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_SM9GMMjsEeejPrk7VVOpDA" name="RotacionDeMotor :Grados temperatura" incoming="_bzuzMMjsEeejPrk7VVOpDA">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_SM9GMcjsEeejPrk7VVOpDA" value="1"/>
       </node>
     </packagedElement>
