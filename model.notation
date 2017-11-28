@@ -138,7 +138,7 @@
     </styles>
     <element xmi:type="uml:Model" href="model.uml#_OmDIMLUoEeeg-K7kxgiQPA"/>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_xvO7UL3iEeepfsfxbh3Sgw" type="PapyrusUMLClassDiagram" name="NewSysML1.4BlockDefinition" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_xvO7UL3iEeepfsfxbh3Sgw" type="PapyrusUMLClassDiagram" name="BlockDefinition" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_y9wj8L3iEeepfsfxbh3Sgw" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_y9wj8r3iEeepfsfxbh3Sgw" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_y9wj873iEeepfsfxbh3Sgw" type="Class_FloatingNameLabel">
