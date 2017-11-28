@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ConstraintBlocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements">
   <uml:Model xmi:id="_OmDIMLUoEeeg-K7kxgiQPA" name="RootElement">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_OuGRALUoEeeg-K7kxgiQPA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -39,6 +39,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ZsgzE73rEeepfsfxbh3Sgw" name="indicador visual" type="_TxuPoL3rEeepfsfxbh3Sgw" aggregation="composite" association="_ZsgzEL3rEeepfsfxbh3Sgw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_LRwHw73tEeepfsfxbh3Sgw" name="encender " type="_vdEcsL3oEeepfsfxbh3Sgw" association="_LRwHwL3tEeepfsfxbh3Sgw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_4kSRIL3uEeepfsfxbh3Sgw" name="Velocidad = KM/H"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tUJDg9PwEee1WrNs516awQ" name="velocimetro" type="_AgPW4NPvEee1WrNs516awQ" aggregation="composite" association="_tUJDgNPwEee1WrNs516awQ"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_KoghAL3uEeepfsfxbh3Sgw" name="ProcesarVelocidad">
         <ownedRule xmi:type="uml:DurationConstraint" xmi:id="_aOleAL3uEeepfsfxbh3Sgw" name="1111"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_TvvLQL3uEeepfsfxbh3Sgw" name="rawSpeed" type="_oDh_IL3vEeepfsfxbh3Sgw"/>
@@ -79,7 +80,7 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_LRwHxL3tEeepfsfxbh3Sgw" name="velocimetro" type="_y9A9EL3iEeepfsfxbh3Sgw" association="_LRwHwL3tEeepfsfxbh3Sgw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:DataType" xmi:id="_oDh_IL3vEeepfsfxbh3Sgw" name="KMH"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_oDh_IL3vEeepfsfxbh3Sgw" name="KMH" visibility="package"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_DqpYwMNZEeehwesuyvolFw" name="Interaction2">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1TvxYcNoEeehwesuyvolFw" name="" type="_1wkp0L3iEeepfsfxbh3Sgw"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_GIi-kMNZEeehwesuyvolFw" name="CONDUCTOR" coveredBy="_LNdQocNeEeehwesuyvolFw _5G7dMcNqEeehwesuyvolFw"/>
@@ -178,6 +179,25 @@
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_SM9GMcjsEeejPrk7VVOpDA" value="1"/>
       </node>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XtgBUNPnEeeXbLoLiYRWYw" name="Velocidad">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_iICGgNPnEeeXbLoLiYRWYw" name="DatoDeVelocidad" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eS9t4NPxEee1WrNs516awQ" name="Attribute2" type="_AgPW4NPvEee1WrNs516awQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AgPW4NPvEee1WrNs516awQ" name="Velocimetro">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_lWDLkNPwEee1WrNs516awQ" name="Constraint1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_nq6KINPwEee1WrNs516awQ">
+          <language>OCL</language>
+          <body>formula de conversion&#xD;
+</body>
+        </specification>
+      </ownedRule>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tUJDgNPwEee1WrNs516awQ" memberEnd="_tUJDg9PwEee1WrNs516awQ _tUJDhNPwEee1WrNs516awQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tUJDgdPwEee1WrNs516awQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tUJDgtPwEee1WrNs516awQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tUJDhNPwEee1WrNs516awQ" name="velocimetro" type="_y9A9EL3iEeepfsfxbh3Sgw" association="_tUJDgNPwEee1WrNs516awQ"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Oq0TcLUoEeeg-K7kxgiQPA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oq-EcLUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -253,4 +273,6 @@
   <DeprecatedElements:FlowSpecification xmi:id="_-79FML3rEeepfsfxbh3Sgw" base_Interface="_-7z7QL3rEeepfsfxbh3Sgw"/>
   <Blocks:Block xmi:id="_LR54wL3tEeepfsfxbh3Sgw" base_Class="_LRwHwL3tEeepfsfxbh3Sgw"/>
   <Blocks:ValueType xmi:id="_oDrJEL3vEeepfsfxbh3Sgw" base_DataType="_oDh_IL3vEeepfsfxbh3Sgw"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_AgiR0NPvEee1WrNs516awQ" base_Class="_AgPW4NPvEee1WrNs516awQ"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_NN970NPxEee1WrNs516awQ" base_Class="_XtgBUNPnEeeXbLoLiYRWYw"/>
 </xmi:XMI>
